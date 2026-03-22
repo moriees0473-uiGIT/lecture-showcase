@@ -1,0 +1,12 @@
+{
+  "name": "lecture-showcase",
+  "private": true,
+  "scripts": {
+    "dev": "slidev slides/history.md --port 3032 --remote"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.49.0",
+    "@slidev/theme-default": "latest",
+    "chart.js": "^4.4.0"
+  }
+}
