@@ -1,0 +1,11 @@
+services:
+  - type: static_site
+    name: lecture-showcase
+    env: node
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./dist
+    routes:
+      - path: /
+        index: index.html
+      - path: /*
+        index: index.html

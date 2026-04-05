@@ -1,8 +1,4 @@
 ---
-remote: "your-secure-password"
----
-
----
 layout: center
 ---
 
