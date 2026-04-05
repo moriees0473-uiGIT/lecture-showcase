@@ -2,8 +2,8 @@
   "name": "lecture-showcase",
   "private": true,
   "scripts": {
-    "dev": "slidev slides/history.md --port 3032 --remote",
-    "build": "slidev build slides/history.md --out dist"
+    "dev": "slidev slides/index.md --port 3032 --remote",
+    "build": "NODE_OPTIONS='--max-old-space-size=2048' slidev build slides/history.md --out dist --base ./"
   },
   "dependencies": {
     "@slidev/cli": "^52.14.1",
