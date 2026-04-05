@@ -1,20 +1,14 @@
 {
   "name": "lecture-showcase",
   "private": true,
-  "engines": {
-    "node": ">=18.0.0 <26.0.0"
-  },
   "scripts": {
-    "dev": "slidev slides/history.md --port 3032 --remote",
-    "build": "cross-env NODE_OPTIONS=--max-old-space-size=1024 slidev build slides/index.md --out dist --base ./",
-    "start": "npx serve -s dist -l 3032"
+    "dev": "slidev",
+    "build": "slidev build slides/index.md --out ../dist",
+    "start": "serve -s dist -l 3032"
   },
   "dependencies": {
     "@slidev/cli": "^52.14.1",
     "@slidev/theme-default": "latest",
     "serve": "^14.2.0"
-  },
-  "devDependencies": {
-    "cross-env": "^7.0.3"
   }
 }
