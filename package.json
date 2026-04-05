@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "slidev slides/history.md --port 3032 --remote",
     "build": "cross-env NODE_OPTIONS=--max-old-space-size=1024 slidev build slides/index.md --out dist --base ./",
-    "start": "npm run build && npx serve -s dist -l 3032"
+    "start": "npx serve -s dist -l 3032"
   },
   "dependencies": {
     "@slidev/cli": "^52.14.1",
