@@ -2,11 +2,11 @@
   "name": "lecture-showcase",
   "private": true,
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=18.0.0 <26.0.0"
   },
   "scripts": {
     "dev": "slidev slides/history.md --port 3032 --remote",
-    "build": "cross-env NODE_OPTIONS=--max-old-space-size=2048 slidev build slides/index.md --out dist --base ./ && echo 'Build completed. Checking dist directory:' && ls -la dist/"
+    "build": "cross-env NODE_OPTIONS=--max-old-space-size=2048 slidev build slides/index.md --out dist --base ./ && echo 'Build completed. Checking dist directory:' && node -e \"const fs = require('fs'); const path = './dist'; if (fs.existsSync(path)) { console.log('dist directory exists'); const files = fs.readdirSync(path); console.log('Contents:', files.slice(0, 10).join(', ') + (files.length > 10 ? '...' : '')); } else { console.log('dist directory does not exist'); }\""
   },
   "dependencies": {
     "@slidev/cli": "^52.14.1",
