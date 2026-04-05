@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "dev": "slidev slides/history.md --port 3032 --remote",
-    "build": "slidev build slides/history.md"
+    "build": "slidev build slides/history.md --out dist"
   },
   "dependencies": {
     "@slidev/cli": "^52.14.1",
