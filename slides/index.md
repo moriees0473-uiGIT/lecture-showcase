@@ -12,6 +12,14 @@ keyboard: false
 selectable: false
 ---
 
+<style>
+/* 右側のドロワーボタンとメニューを強制的に非表示にする */
+.slidev-v-drawer, 
+.nav-btn, 
+button[title="Show overview"] {
+  display: none !important;
+}
+</style>
 
 <LectureCover 
   title="基本情報技術者試験対策講座"
