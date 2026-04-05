@@ -7,9 +7,9 @@ routeAlias: setting
 <SettingsPanel />
 
 <div class="back-link-container">
-  <Link to="1" class="back-link">
+  <a href="/1" class="back-link">
     <carbon:home class="icon" /> Back to Portal
-  </Link>
+  </a>
 </div>
 
 <style>

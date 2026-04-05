@@ -2,9 +2,9 @@
   <div class="relative h-full w-full flex flex-col justify-center px-12 py-10 transition-colors duration-500 cover-wrapper">
     
     <div class="absolute top-6 right-6">
-      <Link to="setting" class="border-none text-2xl opacity-60 hover:opacity-100 transition-opacity cursor-pointer setting-icon">
+      <a href="setting" class="border-none text-2xl opacity-60 hover:opacity-100 transition-opacity cursor-pointer setting-icon">
         <carbon:settings />
-      </Link>
+      </a>
     </div>
 
     <div class="max-w-4xl">

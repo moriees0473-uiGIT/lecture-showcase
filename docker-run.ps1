@@ -1,3 +1,10 @@
+# 強力な掃除コマンド
+# docker system prune -f
+
+# 1. Vite と Slidev のキャッシュフォルダを強制削除（先頭の # を消す！）
+rm -r -Force node_modules/.vite -ErrorAction SilentlyContinue
+rm -r -Force .slidev -ErrorAction SilentlyContinue
+
 # 1. 実行中のコンテナを強制停止・削除
 docker rm -f lecture-showcase-container
 

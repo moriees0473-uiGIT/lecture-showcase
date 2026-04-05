@@ -2,17 +2,10 @@
 layout: center
 ---
 
-<script setup>
-import GlassCard from './components/GlassCard.vue'
-import HistoryChart from './components/HistoryChart.vue'
-import FutureChart from './components/FutureChart.vue'
-import SentencePlayer from './components/SentencePlayer.vue' // 追加
-</script>
-
 <div class="absolute top-6 right-6 z-50">
-  <Link to="setting" class="border-none text-2xl opacity-60 hover:opacity-100 transition-opacity cursor-pointer text-gray-400">
+  <a href="setting" class="border-none text-2xl opacity-60 hover:opacity-100 transition-opacity cursor-pointer text-gray-400">
     <carbon-settings />
-  </Link>
+  </a>
 </div>
 
 <div class="text-center">
@@ -24,6 +17,17 @@ import SentencePlayer from './components/SentencePlayer.vue' // 追加
   </h1>
   <p class="text-xl text-gray-500 dark:text-gray-400">産業構造を変革したテクノロジーの軌跡と、2026年から2036年への10年予測</p>
 
+</div>
+
+<!--
+Iii
+-->
+
+---
+layout: center
+---
+
+<div class="text-center">
   <SentencePlayer 
     text="[it]プログラミング言語[/it]は、人間とコンピュータが[v]対話するため[/v]の[n]共通言語[/n]です。" 
     en="[it]Programming languages[/it] are a common language for humans and computers to communicate."
@@ -31,34 +35,20 @@ import SentencePlayer from './components/SentencePlayer.vue' // 追加
 
   <SentencePlayer 
     text="皆さん、おはようございます！今日から皆さんと一緒に勉強していく、[あなたの名前]です。よろしくお願いします。
-    さて、講義を始める前に、まずはこの授業の進め方についてお話しします。
-    日本語での講義は少し難しいと感じることもあるかもしれませんが、安心してください。
-    この授業では、皆さんが理解しやすいように特別な工夫をしています。"
+    さて、講義を始める前に、まずはこの授業の進め方についてお話しします。"
   />
-
-  <SentencePlayer 
-    text="では、まずはこちらのスライドを見てください。"
-  />
-
-この授業で使用するスライドは、日本語と英語の両方で、自動音声が流れるようになっています。まず日本語で説明が流れ、その後に英語のサポートが入ります。
-
-言葉の壁を気にせず、まずは内容を掴むことに集中してみてください。百聞は一見にしかず、と言いますので、実際に日本語の例を流してみますね。」
-
-3. デモンストレーション
-「（スライドを操作しながら）
-それでは、まずは日本語の音声サンプルです。聞いてください。
-
   <SentencePlayer 
     text="[it]Docker[/it]を[v]使って[/v]、軽量な[n]コンテナ[/n]を[v]起動します[/v]。(+e)" 
     en="Use Docker to start lightweight containers."
   />
-</div>
 
-<SentencePlayer 
-  text="[it]C言語[/it]の[n]栄枯盛衰[/n]を学びます。" 
-  jp="シーげんごの えいこせいすい を まなびます。"
-  en="We will learn about the rise and fall of the C language." 
-/>
+  <SentencePlayer 
+    text="[it]C言語[/it]の[n]栄枯盛衰[/n]を学びます。" 
+    jp="シーげんごの えいこせいすい を まなびます。"
+    en="We will learn about the rise and fall of the C language." 
+  />
+
+</div>
 
 ---
 layout: default
@@ -71,7 +61,7 @@ layout: default
 
 <div class="mt-8" v-click>
   <GlassCard>
-    <HistoryChart />
+    <SimpleImage src="/history-graph.png" mode="original" />
   </GlassCard>
 </div>
 
@@ -177,7 +167,7 @@ layout: two-cols
 
 <div class="pr-4">
   <GlassCard>
-    <FutureChart />
+    <SimpleImage src="/history-graph.png" height="500px" />
   </GlassCard>
 </div>
 
