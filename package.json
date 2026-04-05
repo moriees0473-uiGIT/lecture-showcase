@@ -6,7 +6,7 @@
   },
   "scripts": {
     "dev": "slidev slides/history.md --port 3032 --remote",
-    "build": "cross-env NODE_OPTIONS=--max-old-space-size=2048 slidev build slides/history.md --out dist --base ./"
+    "build": "cross-env NODE_OPTIONS=--max-old-space-size=2048 slidev build slides/index.md --out dist --base ./"
   },
   "dependencies": {
     "@slidev/cli": "^52.14.1",
