@@ -16,6 +16,5 @@ EXPOSE 3032
 ENV HOST=0.0.0.0
 ENV PORT=3032
 
-# 起動コマンド（直前に package.json の predev が走り、ローカルのUIライブラリがリンクされます）
-COPY ./slides /app/slides
-CMD ["npx", "slidev", "slides/history.md", "--port", "3032", "--remote"]
+# 起動コマンド（本番環境では静的ファイルサーバーでサーブ）
+CMD ["npm", "start"]
