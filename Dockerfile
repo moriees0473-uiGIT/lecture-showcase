@@ -17,7 +17,5 @@ ENV HOST=0.0.0.0
 ENV PORT=3032
 
 # 起動コマンド（直前に package.json の predev が走り、ローカルのUIライブラリがリンクされます）
-#CMD ["npm", "run", "dev"]
 COPY ./slides /app/slides
-CMD ["npx", "slidev", "slides/history.md", "--port", "3032", "--remote", "--host"]
-#CMD ["npx", "slidev", "slides/history.md", "--port", "3032"]
+CMD ["npx", "slidev", "slides/history.md", "--port", "3032", "--remote"]

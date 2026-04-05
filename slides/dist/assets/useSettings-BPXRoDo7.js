@@ -1,0 +1,1 @@
+import{aQ as e}from"./modules/vue-DxswPqFu.js";const o=e("lecture-slidev-settings",{theme:"system",themeColor:"#001529",fontSize:"text-5xl",jpVoiceURI:"",jpSpeed:1,enVoiceURI:"",enSpeed:1});export{o as g};
