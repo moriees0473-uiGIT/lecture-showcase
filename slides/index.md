@@ -1,6 +1,17 @@
 ---
+# 1枚目のスライドの冒頭
 layout: full
+# --- 生徒の操作を制限する設定 ---
+selectable: false      # テキスト選択を無効化（コピー防止）
+navers: false          # ナビゲーションバーを非表示
+presenter: true        # プレゼンターモードを有効化
+drawers:
+  enabled: false       # 右側のページ一覧ドロワーを無効化
+# キーボード操作を制限（任意）
+keyboard:
+  enabled: false
 ---
+
 
 <LectureCover 
   title="基本情報技術者試験対策講座"
