@@ -1,7 +1,7 @@
 ---
 layout: full
 selectable: false      # テキスト選択を無効化（コピー防止）
-navers: false          # ナビゲーションバーを非表示
+navbars: false         # ナビゲーションバーを非表示
 presenter: true        # プレゼンターモードを有効化
 drawers:
   enabled: false       # 右側のページ一覧ドロワーを無効化
